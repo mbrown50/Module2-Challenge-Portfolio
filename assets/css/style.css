@@ -32,14 +32,34 @@ header nav {
     font-size: 20px;
 }
 
+/* ///////// added */
+nav {
+    display: flex;
+    background-color: #d8a47f;
+  }
+/* ///////// end add */
+  
 header nav ul {
     list-style-type: none;
 }
 
 header nav ul li {
     display: inline-block;
-    margin-left: 25px;cd
+    margin-left: 25px;
 }
+
+/* ////////// added */
+
+
+main {
+    /* Turns this element into a flexbox */
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+/* //////////added */
 
 a {
     color: #ffffff;
@@ -89,57 +109,13 @@ p {
     color: #ffffff;
 }
 
-/* updated to class that can be applied to multiple elements */
-/*
-.search-engine-optimization{
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
 
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-*/
 
 /* added class used for multiple elements */
 .card img { 
     max-height: 200px;
 }
 
-/* updated to class that can be applied to multiple elements */
-/*
-
-.search-engine-optimization  img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-*/
 
 /* added class used for multiple elements */
 .card h2 {
@@ -147,24 +123,6 @@ p {
     font-size: 36px;
 }
 
-/* updated to class that can be applied to multiple elements */
-/*
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-*/
 
 
 .benefits {
@@ -184,23 +142,6 @@ p {
     color: #ffffff;
 }
 
-/* updated to class that can be applied to multiple elements */
-/*
-.benefit-lead { 
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-*/
 
 /* added class used for multiple elements */
 .benefit h3 { 
@@ -208,23 +149,7 @@ p {
     text-align: center;
 }
 
-/* updated to class that can be applied to multiple elements */
-/*
-.benefit-lead h3 { 
-    margin-bottom: 10px;
-    text-align: center;
-}
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-*/
 
 /* added class used for multiple elements */
 .benefit img { 
@@ -233,26 +158,31 @@ p {
     max-width: 150px;
 }
 
-/* updated to class that can be applied to multiple elements */
-/*
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
+/* /////////////////////// added */
+/* Image Placeholders */
+.sample-img {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+    border: 1px solid black;
+  }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
+aside {
+    flex: 30%;
+    background-color: #b9c6ae;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-*/
+  section {
+    flex: 70%;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  
+/* /////////////////////// end add */
 
 footer {
     padding: 30px;
@@ -273,3 +203,33 @@ footer {
     font-size: 20px;
 }
 */
+
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    header {
+      background: #772014;
+    }
+
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: #bb8588;
+    }
+    .card {
+        width: 50%;
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+    .card {
+        width: 100%;
+    }
+  }
