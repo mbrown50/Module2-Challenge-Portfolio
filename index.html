@@ -3,17 +3,20 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Melissa Brown Portfolio</title>
 </head>
-
 <body>
+    <!-- Header -->
     <header>
-        <h1>This Header</h1>
-        <p>will change colors when the screen size hits 992px or smaller.</p>     
+        <h1>Melissa Brown Portfolio</h1>
+        <p>Portfolio of work samples</p>     
     </header>
+     <!-- Navbar -->
     <nav>
-        <ul>
+        <!-- why list?
+            <ul>
             <li>
                 <a href="#search-engine-optimization">Lorum</a>
             </li>
@@ -24,53 +27,60 @@
                 <a href="#social-media-marketing">Lorum</a>
             </li>
         </ul>
+    -->
+        <a href="#search-engine-optimization">Lorum</a>
+        <a href="#online-reputation-management">Lorum</a>
+        <a href="#social-media-marketing">Lorum</a>
     </nav>
+    <!-- Main -->
     <main>
         <aside>
             <h2>This is a sidebar.</h2>
             <div class="sample-img">Image</div>
             <p>When the screen size hits 576px or smaller...</p>
         </aside>
-    <section class="hero"></section>
-    <section class="content">
-        <div id="search-engine-optimization" class="card"> <!-- updated to class used for multiple elements -->
+    <!-- <section class="hero"></section> -->
+    <!-- Portfolio Cards -->
+    <div class="samples">
+        <section id="search-engine-optimization" class="card rotate">
             <img src="./assets/images/search-engine-optimization.jpg" alt="Notebook page with words SEO, Content, Headings, Mobile Compatibility, Social Media, Link Building, Backlink." class="float-left" />
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
-        </div>
-        <div id="online-reputation-management" class="card"> <!-- updated to class used for multiple elements -->
+        </section>
+        <section id="online-reputation-management" class="card scale"> 
             <img src="./assets/images/online-reputation-management.jpg" alt="Laptop with word REPUTATION on screen." class="float-right" />
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
-        </div>
-        <div id="social-media-marketing" class="card"> <!-- updated to class used for multiple elements -->
+        </section>
+        <section id="social-media-marketing" class="card skew"> 
             <img src="./assets/images/social-media-marketing.jpg" alt="Table with laptop and icons including words SHARE, LIKE, TWEET, MEDIA." class="float-left" />
             <h2>Social Media Marketing</h2>
             <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
             </p>
-        </div>
+        </section>
     </section>
+    <!--
     <section class="benefits">
-        <div class="benefit"> <!-- updated to class used for multiple elements -->
+        <div class="benefit"> 
             <h3>Lead Generation</h3>
             <img src="./assets/images/lead-generation.png" alt="Lead generation icon with funnel and dollar sign."/>
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
         </div>
-        <div class="benefit"> <!-- updated to class used for multiple elements -->
+        <div class="benefit"> 
             <h3>Brand Awareness</h3>
             <img src="./assets/images/brand-awareness.png" alt="Brand awareness icon of a profile with necktie and lightbulb as the head."/>
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
         </div>
-        <div class="benefit"> <!-- updated to class used for multiple elements -->
+        <div class="benefit">
             <h3>Cost Management</h3>
             <img src="./assets/images/cost-management.png" alt="Cost management icon wit gear and money coins." />
             <p>
@@ -78,8 +88,9 @@
             </p>
         </div>
     </section>
+    -->
     </main>
-    <!-- removed H2 tag as was not in order and Header tags in non-header elements is not good practice -->
+    <!-- Footer -->
     <footer> 
         <span class="footerText">University of Minnestoa Bootcamp challenge</span>
         <p>
