@@ -67,16 +67,23 @@ nav a:hover {
     /* flex-wrap: wrap; */
 }
 
-.aside {
+.lSide, .rSide {
   /*flex-direction: column;*/
   /* display: block; */
   /*height:100%; */
   /*background-color: #d8a47f; */
   /*flex: 1; */  /* or 30% */
-  /*padding: 80px;*/ /* or 80 */
+  padding: 20px;
   /* flex-wrap: wrap; */
   /*text-align: left; */
-  border-right: solid black; 
+  /*border-right: solid black; */
+}
+
+#mainProject {
+  width: 100%;
+  /* width: 600px; */
+  border: solid;
+  border-color: pink;
 }
 
 main {
