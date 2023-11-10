@@ -12,7 +12,10 @@ https://mbrown50.github.io/Module2-Challenge-Portfolio/
 GitHub Repo:
 https://github.com/mbrown50/Module2-Challenge-Portfolio/
 
-![Image of deployed site 1](./assets/images-page/screenshot1.png "Deployed site 1")
+![Image of deployed site 1](./assets/images-page/mod2-p1.jpg "Deployed site 1")
+![Image of deployed site 1](./assets/images-page/mod2-p2.jpg "Deployed site 1")
+![Image of deployed site 1](./assets/images-page/mod2-p3.jpg "Deployed site 1")
+![Image of deployed site 1](./assets/images-page/mod2-p4.jpg "Deployed site 1")
 
 ## Installation
 
