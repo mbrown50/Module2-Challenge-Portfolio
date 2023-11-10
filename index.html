@@ -1,102 +1,87 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Melissa Brown Portfolio</title>
+  <title>Portfolio - Melissa Brown</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Melissa Brown Portfolio</h1>
-        <p>Portfolio of work samples</p>     
-    </header>
-     <!-- Navbar -->
-    <nav>
-        <!-- why list?
-            <ul>
-            <li>
-                <a href="#search-engine-optimization">Lorum</a>
-            </li>
-            <li>
-                <a href="#online-reputation-management">Lorum</a>
-            </li>
-            <li>
-                <a href="#social-media-marketing">Lorum</a>
-            </li>
-        </ul>
-    -->
-        <a href="#search-engine-optimization">Lorum</a>
-        <a href="#online-reputation-management">Lorum</a>
-        <a href="#social-media-marketing">Lorum</a>
-    </nav>
-    <!-- Main -->
-    <main>
-        <aside>
-            <h2>This is a sidebar.</h2>
-            <div class="sample-img">Image</div>
-            <p>When the screen size hits 576px or smaller...</p>
-        </aside>
-    <!-- <section class="hero"></section> -->
-    <!-- Portfolio Cards -->
-    <div class="samples">
-        <section id="search-engine-optimization" class="card rotate">
-            <img src="./assets/images/search-engine-optimization.jpg" alt="Notebook page with words SEO, Content, Headings, Mobile Compatibility, Social Media, Link Building, Backlink." class="float-left" />
-            <h2>Search Engine Optimization</h2>
-            <p>
-                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
-            </p>
-        </section>
-        <section id="online-reputation-management" class="card scale"> 
-            <img src="./assets/images/online-reputation-management.jpg" alt="Laptop with word REPUTATION on screen." class="float-right" />
-            <h2>Online Reputation Management</h2>
-            <p>
-                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
-            </p>
-        </section>
-        <section id="social-media-marketing" class="card skew"> 
-            <img src="./assets/images/social-media-marketing.jpg" alt="Table with laptop and icons including words SHARE, LIKE, TWEET, MEDIA." class="float-left" />
-            <h2>Social Media Marketing</h2>
-            <p>
-                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
-            </p>
-        </section>
-    </section>
-    <!--
-    <section class="benefits">
-        <div class="benefit"> 
-            <h3>Lead Generation</h3>
-            <img src="./assets/images/lead-generation.png" alt="Lead generation icon with funnel and dollar sign."/>
-            <p>
-                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
-            </p>
-        </div>
-        <div class="benefit"> 
-            <h3>Brand Awareness</h3>
-            <img src="./assets/images/brand-awareness.png" alt="Brand awareness icon of a profile with necktie and lightbulb as the head."/>
-            <p>
-                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
-            </p>
-        </div>
-        <div class="benefit">
-            <h3>Cost Management</h3>
-            <img src="./assets/images/cost-management.png" alt="Cost management icon wit gear and money coins." />
-            <p>
-                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
-            </p>
-        </div>
-    </section>
-    -->
-    </main>
-    <!-- Footer -->
-    <footer> 
-        <span class="footerText">University of Minnestoa Bootcamp challenge</span>
-        <p>
-            &copy; 2023
-        </p>
-    </footer>
+  <!-- Header -->
+  <header>
+    <h1>Portfolio</h1>
+    <h2>Melissa Brown</h2>  
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#samples">Sample Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+   <!-- About -->
+   <div class="group" id="about">
+   <div class="aside" ><h3>About</h3></div>
+    <div>text here
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+    </div>
+    </div>
+   <hr />
+
+  <!-- Body -->
+  <main style="border: solid rgb(224, 16, 16);">
+    <div class="group" id="samples"> 
+    <div class="aside" >
+      <h3>Sample Work</h3>
+      <p>test <a href="http://www.google.com">google</a> testing</p>
+    </div>
+    <!-- Sample work -->
+    <div class="samples" style="border: solid rgb(60, 156, 66);">
+      <section class="card">
+        <header>University of MN Bootcamp 2023 Challenge</header>
+        <a href="https://mbrown50.github.io/Module-1-Challenge-Horiseon-site/">
+          <img src="./assets/images/screenshot1.png" alt="camera" width="200px"/></a>
+        <p>Mock site for fictitious Horiseon company</p>
+      </section>
+      <section class="card">
+        <header>Sample 2 TBD</header>
+        <img src="./assets/images/brand-awareness.png" alt="FPO" />
+        <p>Sample 2 here</p>
+      </section>
+      <section class="card">
+        <header>Sample 3 TBD</header>
+        <img src="./assets/images/cost-management.png" alt="FPO" />
+        <p>Sample 3 here</p>
+      </section>
+      <section class="card">
+        <header>Sample 4 TBD</header>
+        <img src="./assets/images/lead-generation.png" alt="FPO" />
+        <p>Sample 4 here</p>
+      </section>
+    </div>
+  </div>
+  </main>
+
+  <hr />
+    <!-- Contact -->
+    <div class="group" id="contact"> 
+      <div class="aside" ><h3>Contact</h3></div>
+      <section>text here</section>
+    </div>
+ 
+
+  <!-- Footer -->
+  <footer>
+    <h3>
+      &copy; 2023
+    </h3>
+  </footer>
 </body>
 
 </html>

@@ -1,309 +1,163 @@
-* {
-    box-sizing: border-box;
-   /* padding: 0; */
-   /*  margin: 0; */
+html {
+  height: 100%;
+}
+
+/* Create CSS variables at the root of the document to be used throughout the style sheet */
+:root {
+  --white: #fff;
+  --dark-blue: #13293d;
+  /* You can use it with any value that is repeated throughout the sheet */
+  --border-radius: 50px;
 }
 
 body {
-    font-family: Arial; /* added */
-    margin: 0; /* added */
-    /* background-color: #d9dcd6; */
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
 }
 
-/*
-a {
-    color: #ffffff;
-    text-decoration: none;
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-p {
-    font-size: 16px;
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-*/
 
 header {
-    padding: 40px; /*  20px or 40px  */
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-    text-align: center;
-    background: #2a607c; /* background: #13293d; , background-color: #2a607c */
-    color: #ffffff; 
+  padding: 40px;
+  text-align: center;
+  /* Refer to CSS values by the name of the custom property we assigned it */
+  background: var(--dark-blue);
+  color: var(--white);
 }
-
-/*
-header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-*/
-
-/*
-header h1 .seo {
-    color: #d9dcd6;
-}
-*/
 
 nav {
-    /*
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    */
-    /* added */
-    display: flex;
-    background-color: #d8a47f;
-    display: flex;
-    /* Align the child elements to the right side of the parent */
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #d8a47f;
 }
 
-/* why list 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline-block; 
-    margin-left: 25px;
-}
-*/
-
-/* added */
-/*
 nav a {
-    color: #13293d;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-  }
-  */
-
-/* ////////// added */
-
-
-main {
-    /* Turns this element into a flexbox */
-    display: flex;
-    /* Forces elements to the next line if they don't fit */
-    flex-wrap: wrap;
-   /* margin-top: 2%; */ /* keep? */
+  color: var(--dark-blue);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
 }
 
-aside {
-    flex: 1; /* or 30% */
-    background-color: #b9c6ae;
-    padding: 80px; /* or 80 */
-    /* flex-wrap: wrap; */
-    text-align: center;
-  }
+nav a:hover {
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
 
 
-  .samples {
-    /* width: 75%; */
+.group {
+      /* width: 75%; */
     /* display: inline-block; */
     /* margin-left: 20px; */
     /* added */
-    flex: 4;
-    background-color: #fff;
-    padding: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-/*
-  section {
-    flex: 70%;
-    background-color: #fff;
+    justify-content: flex-start;
+    /* flex: 4; */
     padding: 20px;
-  }
-  */
-
-  /* Added rotation, box-shadow, border-radius */ 
-.card {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    flex: 0 0 400px;
-    transform: rotate(8deg);
-    box-shadow: 10px 10px 5px #aaaaaa; 
-    border-radius: 50px;
-  }
-/* added class used for multiple elements */
-/*
-.card { 
-    margin-bottom: 20px;
-    padding: 50px; 
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    flex: 0 0 400px;
-}
-*/
- 
-  
-  /* Added border-radius to match the card */ 
-  .card header {
-    border-radius: 50px 50px 0px 0px; 
-    padding: 20px;
-  }
-
-  /*
-    .card h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-    }
-    */
-
-  .card p {
-    text-align: center;
-  }
-  
-  .card img {
-    width: 100%; 
-    /* max-height: 200px; */
-  }
-
-/*
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    /* flex-wrap: wrap; */
 }
 
-.benefit { 
-    margin-bottom: 32px;
-    color: #ffffff;
+.aside {
+  /*flex-direction: column;*/
+  /* display: block; */
+  /*height:100%; */
+  /*background-color: #d8a47f; */
+  /*flex: 1; */  /* or 30% */
+  /*padding: 80px;*/ /* or 80 */
+  /* flex-wrap: wrap; */
+  /*text-align: left; */
+  border-right: solid black; 
 }
 
-.benefit h3 { 
-    margin-bottom: 10px;
-    text-align: center;
+main {
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.benefit img { 
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-*/
-
-/* /////////////////////// added */
-/* Image Placeholders */
-.sample-img {
-    background-color: #fff;
-    width: 100%;
-    padding: 20px;
-    height: 200px;
-    border: 1px solid black;
-  }
-
-/* /////////////////////// end add */
-
-
-.rotate { 
-
-  transform: rotate(7deg); 
-  
-  } 
-  
- 
-  /* We can use scale to stretch the photo vertically or horizontally */ 
-  
-  .scale { 
-  
-  transform: scale(1.5, 1); 
-  
-  } 
-  
-  /* We can use skew to skew the photo to the left or right */ 
-  
-  .skew { 
-  
-  transform: skew(15deg); 
-  
-  } 
 
 footer {
-    padding: 20px; /* or 30px */
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  background: var(--dark-blue);
+  color: var(--white);
+  margin-top: auto;
 }
 
-/* added to mimic h2 and bold */
-.footerText { 
-    font-size: 20px; /* moved here from .footer h4 */
-    font-weight: bold;
+.samples {
+  flex: 1;
+  background-color: var(--white);
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-/* removed header as was not in order and Header tags in non-header elements is not good practice */
-/*
-.footer h2 {
-    font-size: 20px;
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  flex: 0 0 300px;
+  /*transform: rotate(8deg); */
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
 }
-*/
+
+.card > header {
+  /* This is the same as `border-radius: 50px 50px 0 0 */
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  padding: 20px;
+}
+
+.card > p {
+  text-align: center;
+}
+
+.card > img {
+  width: 100%;
+}
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
-    header {
-      background: #772014;
-    }
-
-  }
-  
-  /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
-    nav {
-      background-color: #bb8588;
-    }
-    /*
-    .card {
-        width: 50%;
-    }
-    */
-    main,
-    nav {
-      flex-direction: column;
-    }
-  }
-  
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
-    }
-    /*
-    .card {
-        width: 100%;
-    }
-    */
+  header {
+    background: #13293d;
   }
 
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+
+  .card {
+      width: 50%;
+  }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  .sample-img {
+    background-color: #8ac4ff;
+  }
+
+  .card {
+      width: 100%;
+  }
+ 
+}
